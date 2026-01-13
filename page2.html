@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thế giới động vật biển</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="clickSound" src="click.mp3"></audio>
+
+<h1 class="title">🌊 THẾ GIỚI ĐỘNG VẬT BIỂN 🐠</h1>
+
+<div class="image-container">
+
+  <!-- 20 HOTSPOT TRONG SUỐT -->
+  <div class="hotspot a1" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_m%E1%BA%ADp"></div>
+  <div class="hotspot a2" data-link="https://vi.wikipedia.org/wiki/B%E1%BB%99_C%C3%A1_%C4%91u%E1%BB%91i"></div>
+  <div class="hotspot a3" data-link="https://vi.wikipedia.org/wiki/Bộ_Cá_nóc"></div>
+  <div class="hotspot a4" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_h%E1%BB%81"></div>
+
+  <div class="hotspot a5" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_voi"></div>
+  <div class="hotspot a6" data-link="https://vi.wikipedia.org/wiki/Gramma_loreto"></div>
+  <div class="hotspot a7" data-link="https://vi.wikipedia.org/wiki/H%E1%BB%8D_T%C3%B4m_h%C3%B9m_c%C3%A0ng"></div>
+  <div class="hotspot a8" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_m%C3%BA_son"></div>
+
+  <div class="hotspot a9"  data-link="https://vi.wikipedia.org/wiki/B%E1%BB%99_C%C3%A1_v%C3%A2y_ch%C3%A2n"></div>
+  <div class="hotspot a10" data-link="https://vi.wikipedia.org/wiki/B%E1%BB%99_C%C3%A1_%C4%91u%E1%BB%91i"></div>
+  <div class="hotspot a11" data-link="https://en-wikipedia-org.translate.goog/wiki/Turtle?_x_tr_sl=en&_x_tr_tl=vi&_x_tr_hl=vi&_x_tr_pto=tc"></div>
+  <div class="hotspot a12" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_voi"></div>
+
+  <div class="hotspot a13" data-link="https://vi.wikipedia.org/wiki/H%E1%BB%8D_T%C3%B4m_h%C3%B9m_c%C3%A0ng"></div>
+  <div class="hotspot a14" data-link="https://vi.wikipedia.org/wiki/Cua_%E1%BA%A9n_s%C4%A9"></div>
+  <div class="hotspot a15" data-link="https://vi.wikipedia.org/wiki/Sao_bi%E1%BB%83n"></div>
+  <div class="hotspot a16" data-link="https://vi.wikipedia.org/wiki/Sao_bi%E1%BB%83n"></div>
+
+  <div class="hotspot a17" data-link="https://vi.wikipedia.org/wiki/H%E1%BB%8D_H%E1%BA%A3i_c%E1%BA%A9u_th%E1%BA%ADt_s%E1%BB%B1"></div>
+  <div class="hotspot a18" data-link="https://share.google/Ejsn3q0i8wMWdBSHW"></div>
+  <div class="hotspot a19" data-link="https://vi.wikipedia.org/wiki/Phân_thứ_bộ_Cua"></div>
+  <div class="hotspot a20" data-link="https://vi.wikipedia.org/wiki/C%C3%A1_ng%E1%BB%B1a"></div>
+</div>
+
+<div class="info">
+  <p>👆 Chạm vào từng con vật để xem thêm thông tin </p>
+</div>
+
+<a href="index.html" class="back">⬅ Quay lại trang video</a>
+
+<script>
+const sound = document.getElementById("clickSound");
+document.querySelectorAll(".hotspot").forEach(h => {
+  h.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
+    setTimeout(() => {
+      window.open(h.dataset.link, "_blank");
+    }, 150);
+  });
+});
+</script>
+
+</body>
+</html>

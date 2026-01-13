@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+/* ================= VIDEO PAGE ================= */
+.video-page video {
+  width: 80vw;
+  max-width: 900px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ================= PAGE 2 ================= */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== CHUNG ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+.title {
+  margin: 15px 0;
+}
+
+/* ===== ẢNH NỀN ===== */
+.image-container {
+  position: relative;
+  width: 90vw;
+  max-width: 1000px;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  background: url("animals.jpg") no-repeat center;
+  background-size: contain;
+}
+
+/* ===== HOTSPOT TRONG SUỐT ===== */
+.hotspot {
+  position: absolute;
+  width: 6%;
+  height: 10%;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* ❌ KHÔNG HIỆN GÌ KHI HOVER */
+.hotspot:hover {
+  background: transparent;
+  outline: none;
+}
+
+/* ===== VỊ TRÍ 20 CON (THEO %) ===== */
+
+/* Trên */
+.a1 { top: 11%; left: 38%; }
+.a2 { top: 5%; left: 57%; }
+.a3 { top: 15%; left: 68%; }
+.a4 { top: 22%; left: 46%; }
+
+/* Giữa trên */
+.a5 { top: 21%; left: 25%; }
+.a6 { top: 26%; left: 35%; }
+.a7 { top: 26%; left: 57%; }
+.a8 { top: 32%; left: 72%; }
+
+/* Giữa */
+.a9  { top: 37%; left: 33%; }
+.a10 { top: 45%; left: 23%; }
+.a11 { top: 47%; left: 38%; }
+.a12 { top: 47%; left: 59%; }
+
+/* Dưới */
+.a13 { top: 70%; left: 34%; }
+.a14 { top: 73%; left: 47%; }
+.a15 { top: 36%; left: 48%; }
+.a16 { top: 60%; left: 56%; }
+
+/* Đáy */
+.a17 { top: 77%; left: 22%; }
+.a18 { top: 88%; left: 44%; }
+.a19 { top: 86%; left: 63%; }
+.a20 { top: 58%; left: 38%; }
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hotspot {
+    width: 10%;
+    height: 14%;
+  }
+}
+
+/* ===== INFO + BACK ===== */
+.info {
+  margin: 12px;
+  font-size: 14px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+/* ===== CHỮ ĐẸP PAGE 2 ===== */
+
+
+
+
+/* NỘI DUNG HƯỚNG DẪN */
+.info {
+  margin: 10px auto 15px;
+  max-width: 90%;
+  font-size: 1rem;
+  color: #cce9ff;
+  opacity: 0.95;
+}
+
+/* NÚT QUAY LẠI */
+.back {
+  display: inline-block;
+  margin: 16px 0 22px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+  box-shadow: 0 4px 10px rgba(0, 140, 255, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* HOVER NÚT */
+.back:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 140, 255, 0.6);
+}
